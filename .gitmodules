@@ -1,6 +1,21 @@
 [submodule "lib/log-courier"]
-	path = lib/log-courier
+	path = lib/driskell/log-courier
 	url = https://github.com/stackdocker/log-courier
 [submodule "lib/elasticsearch-cloud-kubernetes"]
-	path = lib/elasticsearch-cloud-kubernetes
+	path = lib/fabric8io/elasticsearch-cloud-kubernetes
 	url = https://github.com/stackdocker/elasticsearch-cloud-kubernetes
+[submodule "lib/pires/docker-elasticsearch"]
+	path = lib/pires/docker-elasticsearch
+	url = https://github.com/stackdocker/docker-elasticsearch
+[submodule "lib/pires/docker-elasticsearch-kubernetes"]
+	path = lib/pires/docker-elasticsearch-kubernetes
+	url = https://github.com/stackdocker/docker-elasticsearch-kubernetes
+[submodule "lib/pires/kubernetes-elasticsearch-cluster"]
+	path = lib/pires/kubernetes-elasticsearch-cluster
+	url = https://github.com/stackdocker/kubernetes-elasticsearch-cluster
+[submodule "lib/fabric8io/docker-fluentd-kubernetes"]
+	path = lib/fabric8io/docker-fluentd-kubernetes
+	url = https://github.com/stackdocker/docker-fluentd-kubernetes
+[submodule "lib/pires/kubernetes-elk-cluster"]
+	path = lib/pires/kubernetes-elk-cluster
+	url = https://github.com/stackdocker/kubernetes-elk-cluster
