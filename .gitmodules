@@ -1,0 +1,6 @@
+[submodule "lib/log-courier"]
+	path = lib/log-courier
+	url = https://github.com/stackdocker/log-courier
+[submodule "lib/elasticsearch-cloud-kubernetes"]
+	path = lib/elasticsearch-cloud-kubernetes
+	url = https://github.com/stackdocker/elasticsearch-cloud-kubernetes
