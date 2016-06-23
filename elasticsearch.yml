@@ -1,0 +1,28 @@
+node.data: ${NODE_DATA}
+node.master: ${NODE_MASTER}
+
+network.host: 0.0.0.0
+
+cloud:
+  kubernetes:
+    service: ${SERVICE}
+    namespace: ${KUBERNETES_NAMESPACE}
+
+discovery:
+  type: kubernetes
+  zen:
+    ping:
+      multicast:
+        enabled: false
+      unicast:
+        hosts: ${IP_ADDR_SHOW_ETH0}
+    fd:
+      ping_timeout: "1m"
+      ping_retries: 10
+    join_timeout: "45s"
+    master_election:
+      filter_client: false
+    minimum_master_nodes: 1
+
+path:
+  plugins: /usr/share/elasticsearch/plugins

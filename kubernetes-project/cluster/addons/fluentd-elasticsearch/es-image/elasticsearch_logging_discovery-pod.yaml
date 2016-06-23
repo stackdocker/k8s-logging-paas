@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    name: elasticsearch-logging-discovery
+  name: elasticsearch-logging-discovery
+spec:
+  containers:
+  - name: elasticsearch-logging-discovery
+    image: docker.io/ubuntu:14.04
+    imagePullPolicy: IfNotPresent
+    command:
+    - /elasticsearch_logging_discovery
+    volumeMounts:
+    - name: ci-demo
+      mountPath: /elasticsearch_logging_discovery
+    stdinOnce: true
+    tty: true
+  volumes:
+  - name: ci-demo
+    hostPath:
+      path: /data/src/github.com/stackdocker/k8s-logging-paas/kubernetes-project/cluster/addons/fluentd-elasticsearch/es-image/elasticsearch_logging_discovery

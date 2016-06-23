@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: logstash-logging
+  namespace: kube-system
+  labels:
+    k8s-app: logstash-logging
+    kubernetes.io/cluster-service: "true"
+    kubernetes.io/name: "Logstash"
+spec:
+  ports:
+  - port: 4560
+    protocol: TCP
+    name: log4j
+  - port: 5043
+    protocol: TCP
+    name: lumberjack
+  selector:
+    k8s-app: logstash-logging

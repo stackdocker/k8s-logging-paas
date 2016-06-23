@@ -19,3 +19,9 @@
 [submodule "lib/pires/kubernetes-elk-cluster"]
 	path = lib/pires/kubernetes-elk-cluster
 	url = https://github.com/stackdocker/kubernetes-elk-cluster
+[submodule "lib/docker-logstash"]
+	path = lib/fabric8io/docker-logstash
+	url = https://github.com/fabric8io/docker-logstash
+[submodule "lib/MaksymBilenko/docker-logstash"]
+	path = lib/MaksymBilenko/docker-logstash
+	url = https://github.com/MaksymBilenko/docker-logstash
